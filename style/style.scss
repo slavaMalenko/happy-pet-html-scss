@@ -65,7 +65,7 @@ body {
     }
 
     &__link {
-        font-weight: normal;
+        font-weight: 500;
         font-size: 15px;
         color: $black;
         text-decoration: none;
@@ -80,7 +80,7 @@ body {
         &--active {
             position: relative;
 
-            font-weight: 600;
+            font-weight: 700;
             font-size: 15px;
 
             &::before {
@@ -183,6 +183,7 @@ body {
     }
 
     &__button {
+        transition: all .2s linear;
         padding: 22px 35px;
         background: linear-gradient(94.72deg, #FD4B4B 14.55%, #FE2E2E 99.99%);
         box-shadow: 0px 10px 30px rgba(245, 58, 58, 0.54);
@@ -192,6 +193,10 @@ body {
         font-size: 16px;
         color: $white;
         text-decoration: none;
+
+        &:hover {
+            box-shadow: 0px 10px 8px rgba(245, 58, 58, 0.625);
+        }
     }
 }
 
@@ -219,10 +224,10 @@ body {
         border-radius: 15px;
         width: 160px;
         height: 170px;
-        transition: all .2s linear;
+        transition: all .1s linear;
 
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
 
         &-link {
