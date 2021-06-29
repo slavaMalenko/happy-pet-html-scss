@@ -145,11 +145,24 @@
     }
 
     &__price {
+        position: relative;
         text-align: center;
         width: 100%;
         background: #E8E8E8;
         box-shadow: inset 0px -2px 5px rgba(0, 0, 0, 0.25);
         border-radius: 100px;   
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 40%;
+            right: 5%;
+            width: 35px;
+            height: 38px;
+            transform: translate(0, -50%);
+            background: url(../../../img/friends/lapka.png) no-repeat left 7px;
+            background-size: 100%;
+        }
 
         &-button {
             padding: 10px 22px;
