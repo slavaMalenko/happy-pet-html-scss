@@ -1,14 +1,14 @@
 @import '../../variables';
 
 .base {
-    height: 80vh;
+    height: 83vh;
     position: relative;
 
     display: flex;
     flex-direction: column;
 }
 
-.animals {
+.intro {
     position: absolute;
     bottom: 0;
     right: -200px;
