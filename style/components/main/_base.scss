@@ -1,8 +1,11 @@
 @import '../../variables';
 
+
+
 .base {
     height: 83vh;
     position: relative;
+    padding: 0 20px;
 
     display: flex;
     flex-direction: column;
